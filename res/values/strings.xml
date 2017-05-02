@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FootballResult</string>
+    <string name="action_settings">Actualizar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_navegation_">Navegation_Activity</string>
+    <string name="result">Resultado</string>
+    <string name="vs">VS</string>
+
+</resources>

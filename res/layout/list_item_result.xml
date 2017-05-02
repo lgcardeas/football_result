@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:id="@+id/itemResult"
+  android:layout_height="100dp" >	
+  
+  <RelativeLayout
+   		android:id="@+id/Superior"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" >
+  
+        	<ImageView
+	    		android:id="@+id/imagen_HomeClub_Result"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:adjustViewBounds="true"
+        		android:scaleType="fitXY" />
+	        
+        	<TextView
+	    		android:id="@+id/homeClubTextResult"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_below = "@id/imagen_HomeClub_Result"
+    			android:gravity="left"
+    			android:layout_marginLeft="5dp"
+    			android:text=""
+	    		android:layout_marginTop="10dp"
+    			android:textColor="@android:color/white"
+    			android:textAppearance="?android:attr/textAppearanceSmall" />
+        	<TextView
+	    		android:id="@+id/Medio"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginLeft="5dp"
+    			android:text="|"
+    			android:layout_centerVertical="true"
+    			android:layout_centerHorizontal="true"
+    			android:textSize="60sp"
+    			android:textColor="@android:color/white"
+    			android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        	<TextView
+	    		android:id="@+id/golClubTextResult"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginLeft="5dp"
+    			android:text=""
+    			android:layout_marginTop="10dp"
+    			android:layout_centerVertical="true"
+    			android:layout_toLeftOf = "@id/Medio"
+    			android:textSize="40sp"
+    			android:textColor="@android:color/white"
+    			android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        	<ImageView
+	    		android:id="@+id/imagen_Visitor_Result"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_alignParentRight="true"
+    			android:adjustViewBounds="true"
+        		android:scaleType="fitXY"/>
+	        
+        	<TextView
+	    		android:id="@+id/visitorTextResult"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginTop="10dp"
+    			android:layout_marginRight="5dp"
+    			android:layout_below="@id/imagen_Visitor_Result"
+    			android:layout_alignParentRight="true"
+    			android:text=""
+    			android:textColor="@android:color/white"
+    			android:textAppearance="?android:attr/textAppearanceSmall"/>
+	        
+        	<TextView
+	    		android:id="@+id/golVisitorTextResult"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginLeft="5dp"
+    			android:text=""
+    			android:layout_toRightOf="@id/Medio"
+    			android:layout_centerVertical="true"
+    			android:textColor="@android:color/white"
+    			android:textSize="40sp"
+    			android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>
+
+   <RelativeLayout
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content" 
+  		android:layout_below="@id/Superior"
+  		android:orientation="horizontal">
+   		 	<LinearLayout
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content" 
+  				android:id="@+id/ContenedorHC"
+  				android:orientation="vertical"
+  				android:gravity="left"
+  				android:layout_alignParentLeft="true">
+   				  	
+			</LinearLayout>
+			<LinearLayout
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content" 
+  				android:id="@+id/ContenedorV"
+			  	android:orientation="vertical"
+			  	android:gravity="right"
+			  	android:layout_alignParentRight="true">
+        	 		      	
+        	
+			</LinearLayout>           	
+	</RelativeLayout>
+  </RelativeLayout>
